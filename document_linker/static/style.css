@@ -1,0 +1,87 @@
+
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa; /* Light color for nav links */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ff4800; /* Color for active nav link */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #adb5bd; /* Color for nav link on hover */
+}
+
+.navbar-dark {
+    background-color: #000000; /* Black background for navbar */
+    height: 100px;
+
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Increase logo size */
+    width: auto; /* Maintain aspect ratio */
+    align-self: flex-start;
+}
+/* Increase text size and add a classy style to headings */
+.how-to-use-heading {
+    font-size: 2.5rem; /* Increase size for the main heading */
+    font-weight: 700; /* Make text bold */
+    color: #333; /* Darker color for better readability */
+    margin-bottom: 2rem; /* Add spacing below the heading */
+    text-transform: uppercase; /* Make text uppercase */
+}
+
+.step-heading {
+    font-size: 1.75rem; /* Increase size for step headings */
+    font-weight: 600; /* Make text slightly bold */
+    color: #555; /* Slightly lighter color */
+    margin-bottom: 1rem; /* Add spacing below the heading */
+    border-bottom: 2px solid #007bff; /* Add a bottom border for emphasis */
+    padding-bottom: 0.5rem; /* Add padding below the text */
+}
+
+
+
+
+#learnmore{
+    background-color: #ff4800;
+    border: none;
+}
+
+
+
+/* How to Use Section - Adjust Image Size */
+.card-img-top {
+    max-height: 400px; /* Set a maximum height for the images */
+    width: 100%; /* Ensure the image scales with the card width */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+/* Optionally, you can also adjust margins or padding if needed */
+.card-body {
+    padding: 1rem; /* Add padding around the text in the card */
+}
+
+
+
+/* Navbar styling */
+
+
+/* Footer Styling */
+footer {
+    background-color: #343a40; /* Dark background for the footer */
+    color: #ffffff; /* White text color */
+}
+
+footer a {
+    color: #ff4800; /* White color for links in the footer */
+}
+
+footer a:hover {
+    color: #adb5bd; /* Light grey color for links on hover */
+}

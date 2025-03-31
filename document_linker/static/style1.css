@@ -1,0 +1,45 @@
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa; /* Light color for nav links */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ff4800; /* Color for active nav link */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #adb5bd; /* Color for nav link on hover */
+}
+
+.navbar-dark {
+    background-color: #000000; /* Black background for navbar */
+    height: 100px;
+
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Increase logo size */
+    width: auto; /* Maintain aspect ratio */
+    align-self: flex-start;
+}
+
+
+
+
+
+
+
+#main_heading{
+    margin-left: 450px;
+    margin-top: 50px;
+}
+#about{
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 200px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: medium;
+}

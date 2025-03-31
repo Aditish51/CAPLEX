@@ -1,0 +1,153 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribution Guide</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #ff4800;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            
+        }
+        header img {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            color: #333;
+        }
+        code, pre {
+            background: #f9f9f9;
+            padding: 5px;
+            font-size: 0.9rem;
+            color: #d6336c;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .button {
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background: #005a9e;
+        }
+        .note {
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            border: 1px solid #ffeeba;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .warning {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/OSIPI_logo.png' %}" alt="Logo">
+        <h1 style="color: white;">Contribution Guide</h1>
+    </header>
+    <div class="container">
+        <p>If you follow this tutorial but find yourself stuck, please submit an issue in the GitHub repository and include all steps you have taken and the full traceback to the error you've encountered so we may improve this page.</p>
+
+        <h2>Getting Started</h2>
+        <p>This is a basic tutorial on how to contribute to the website if you've never used GitHub, Git, or written any code for a website before. You can either use a remote environment via GitHub, or use your local machine.</p>
+
+        <a href="#" class="button">Skip to "Setting up Workspace" Tutorial</a>
+
+        <div class="warning">
+            <strong>Warning:</strong> Once you're done using the codespace, please make sure to either stop or delete it. This is done by clicking on <b>Code</b>, clicking on the three dots next to your codespace, and choosing the appropriate action. If GitHub is stuck on finding your codespace, refresh the page and try again.
+        </div>
+
+        <h3>Work on Your Local Machine</h3>
+        <h4>Install Anaconda</h4>
+        <p>It is advised to use a context manager and an IDE (integrated development environment) to avoid many problems that arise when setting up your environment. We recommend using Anaconda, which installs the <code>conda</code> context manager.</p>
+
+        <pre>
+winget install -e --id Git.Git
+winget install -e --id Anaconda.Miniconda3
+winget install -e --id Microsoft.VisualStudioCode
+        </pre>
+
+        <h4>Set up Conda Environment</h4>
+        <ol>
+            <li>Create a new Conda environment:
+                <pre>conda create -n CAPLEX python</pre>
+            </li>
+            <li>Activate your environment:
+                <pre>conda activate CAPLEX</pre>
+            </li>
+            <li>Install <code>mkdocs-material</code>:
+                <pre>pip install mkdocs-material</pre>
+            </li>
+        </ol>
+
+        <h3>Setting up GitHub</h3>
+        <ol>
+            <li>Set up a GitHub account.</li>
+            <li>Fork the GitHub repository.</li>
+            <li>Clone your fork in VSCode.</li>
+            <li>Make changes and create a pull request.</li>
+        </ol>
+
+        <h3>Work in a Remote Environment</h3>
+        <p>To create a new codespace (which contains the devcontainer), navigate to a GitHub branch containing a <code>devcontainer.json</code> file and start a new codespace.</p>
+
+        <div class="note">
+            <strong>Note:</strong> For further assistance, refer to the resources section or reach out to the maintainers.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+/* Navbar styles */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+
+
+.navbar-dark {
+    background-color: #343a40;
+
+    height: 100px;
+     /* Black background for navbar */
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Increase logo size */
+    width: auto; /* Maintain aspect ratio */
+    align-self: flex-start;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Align navbar items to the right */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: orangered;
+}
+.osipi-table {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+}
+.osipi-table th, .osipi-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.osipi-table thead {
+    background-color: #f8f9fa;
+}
+#back{
+    margin-left: 800px;
+    margin-top: 800px;
+}
+
+footer {
+    background-color: #343a40; /* Dark background for the footer */
+    color: #ffffff; /* White text color */
+    margin-top: 530px;
+    
+}
+
+footer a {
+    color: #ff4800; /* White color for links in the footer */
+}
+
+footer a:hover {
+    color: #adb5bd; /* Light grey color for links on hover */
+}
